@@ -10,6 +10,9 @@ require dirname(__DIR__).'/vendor/autoload.php';
 
 session_start();
 
+// Simulate a legacy session content
+$_SESSION['foo'] = 'bar';
+
 /**
  * @var App\Kernel $kernel
  *
